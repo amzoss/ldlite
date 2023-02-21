@@ -120,6 +120,7 @@ class LDLite:
 
         """
         self._connect_db_duckdb(filename)
+        return self.db
 
     def _connect_db_duckdb(self, filename=None):
         """Connects to an embedded DuckDB database for storing data.
